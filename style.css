@@ -1,0 +1,65 @@
+/* Dégradé d'arrière-plan animé */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(-45deg, #6a11cb, #2575fc, #6a11cb, #2575fc);
+    background-size: 400% 400%;
+    animation: gradientBG 10s ease infinite;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Animation du fond */
+@keyframes gradientBG {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+.container {
+    background-color: #ffffff;
+    padding: 25px 20px;
+    width: 90%;
+    max-width: 400px;
+    border-radius: 12px;
+    box-shadow: 0 08px 25px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.container:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.25);
+}
+
+h1 {
+    color: #333333;
+    margin-bottom: 30px;
+}
+
+p {
+    color: #555555;
+    line-height: 1.6;
+    margin-bottom: 25   px;
+}
+
+button {
+    background: linear-gradient(90deg, #6a11cb, #2575fc);
+    color: white;
+    padding: 12px 30px;
+    font-size: 16px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+    background: linear-gradient(90deg, #2575fc, #6a11cb);
+    transform: scale(1.05);
+}
+Envoyé
+Écrire à

@@ -1,0 +1,35 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Test Citation</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+    <h1>Citation du jour</h1>
+    <h1 id="titreAnime"></h1>
+    <p id="citation">Clique sur le bouton pour une citation motivante !</p>
+    <button onclick="genererCitation()">Nouvelle citation</button>
+</div>
+    <script>
+        const citations = [
+            "Crois en toi et tout sera possible.",
+            "Chaque jour est une nouvelle chance de réussir.",
+            "Ne baisse jamais les bras.",
+            "Tu es plus capable que tu ne le penses.",
+            "Le succès vient à ceux qui persévèrent.",
+            "La crainte n’est pas dans l’amour mais l’amour parfait bannit la crainte ; car la crainte suppose un châtiment et celui qui craint n'est pas parfait dans l’amour. — 1 Jean 4:18"
+        ];
+
+        function genererCitation() {
+            const index = Math.floor(Math.random() * citations.length);
+            document.getElementById("citation").innerText = citations[index];
+        }
+        
+    
+    </script>
+</body
+
+</html>
